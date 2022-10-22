@@ -1,0 +1,36 @@
+<html>
+    <head>
+<title>Posts</title> 
+    </head>
+
+<body>
+    <h2>Create New Blog Post:</h2>
+    <form action='/posts' method='POST'>
+        Title:  <br>
+        <input type='text' name='title' id='title' class="form-control">
+        <br>
+        Author: <br> 
+        <input type='text' name='author' id='author' class="form-control">
+        <br>
+        Post:  <br>
+        <input type='text' name='content' id='content' class="form-control">
+        <br>
+        <input type='submit' value='Post' class="btn btn-success col-sm-3">
+    </form>
+    <hr>
+
+    {
+        <h2>{{ post.title }}</h2>
+
+        {% if post.author %}
+            <h3>By: {{ post.author }}</h3>
+        {% else %}
+            <h3>By: N/A</h3>
+        {% endif %}
+        
+        <p>{{ post.content }}</p>
+        <a href='/posts/delete/{{post.id}}'>Delete</a>
+        <a href='/posts/edit/{{post.id}}'>Edit</a>
+        <hr>
+</body>
+</html>
