@@ -9,10 +9,8 @@
 > - [x] Empathy Map
 > 
 > - [x] Brainstorm
-> 
-> - [x] Top 3 Ideas
->
-> - [x] Abstract & Introduction
+
+
 
 # DESIGN PHASE 01
 
